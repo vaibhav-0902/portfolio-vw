@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,253 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+/* Header Section*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header h3 a {
+  color: #2978b5;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2978b5;
+}
+
+h3 a:hover {
+  width: 100%;
+  transition: width .3s;
+}
+
+h3 a:hover::after {
+  border-bottom: 1px solid #2978b5;
+  width: 100%;
+  transition: width .3s;
+}
+
+
+
+/* Navbar Section */
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 1rem;
+  list-style: none;
+}
+
+.nav-list-item {
+  margin-left: 1rem;
+  color: #111;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-list-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2978b5;
+}
+
+.nav-list-item:hover {
+  color: #2978b5;
+}
+
+.nav-list-item:hover::after {
+  border-bottom: 1px solid #2978b5;
+  color: #2978b5;
+  width: 100%;
+  transition: width .3s;
+}
+
+
+/* Home Page */
+
+.home-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.home-page h1 {
+  font-size: 4.5rem;
+  margin: 30px auto 10px;
+}
+
+.name {
+  color: #2978b5;
+}
+
+.profession {
+  font-size: 30px;
+}
+
+.desc {
+  width: 700px;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #111;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2978b5;
+}
+
+.links a:hover {
+  color: #2978b5;
+  width: 100%;
+  transition: width .3s;
+}
+
+.links a:hover::after {
+  
+  width: 100%;
+  transition: width .3s;
+}
+
+
+/* Project Page */
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  gap: 10px 20px;
+  margin: 40px auto;
+}
+
+
+/* Pcard Section */
+
+.card {
+  margin: auto;
+  padding: 13px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 30px #ccc;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.skills {
+  padding: 6px 5px;
+  margin: 5px;
+  font-weight: 600;
+  box-shadow: 0px 0px 15px #ccc;
+}
+
+.skill-container {
+  margin: 40px auto 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Skills Page */
+
+.skills-page h2{
+  margin: 20px;
+  font-size: 30px;
+}
+
+.skills-cards {
+  margin: 40px auto;
+}
+
+
+/* Footer Section */
+
+.footer {
+  margin: 25px auto;
+}
+
+
+.footer p {
+  font-weight: bolder;
+  margin: 20px auto;
+  padding: 20px 0px;
+  background-color: #80808042;
+}
+
+
+@media only screen and (max-width: 480px) {
+  
+  .App {
+    width: 400px;
+    text-align: center;
+  }
+
+  .header {
+    margin: -15px auto;
+  }
+
+
+  .home-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .profession {
+    font-size: 1.2rem;
+    margin-right: 0 auto;
+  }
+
+  .desc {
+    width: 375px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
 }
